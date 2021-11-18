@@ -22,11 +22,12 @@ function App() {
         box.style.display="none";
         
     }
-//     function view_cart(){
-//         let box = document.querySelector(".cart-box");
-//         box.style.display="";
+    function view_cart(e){
+        e.preventDefault();
+        let box = document.querySelector(".cart-box");
+        box.style.display="inline";
 
-//     }
+    }
     
   return (
      
@@ -50,7 +51,7 @@ function App() {
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <button class="btn btn-outline-dark"onClick={()=>view_cart()} title="Click to View">
+                        <button class="btn btn-outline-dark" onClick={()=>view_cart()}>
                             <i class="bi-cart-fill me-1"></i>
                             Cart
                             <span class="badge bg-dark text-white ms-1 rounded-pill">{cart}</span>
