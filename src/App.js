@@ -22,11 +22,11 @@ function App() {
         box.style.display="none";
         
     }
-    function view_cart(){
-        let box = document.querySelector(".cart-box");
-        box.style.display="";
+//     function view_cart(){
+//         let box = document.querySelector(".cart-box");
+//         box.style.display="";
 
-    }
+//     }
     
   return (
      
