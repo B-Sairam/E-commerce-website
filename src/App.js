@@ -51,7 +51,7 @@ function App() {
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <a class="btn btn-outline-dark" onClick={()=>view_cart() }>
+                        <a class="btn btn-outline-dark" onClick={()=>view_cart() } title="Click to View">
                             <i class="bi-cart-fill me-1"></i>
                             Cart
                             <span class="badge bg-dark text-white ms-1 rounded-pill">{cart}</span>
@@ -59,8 +59,8 @@ function App() {
                     </form>
                     <div>
                         <button class=" price-tag btn btn-outline-ligth ">
-                        Price:$
-                    <span class="badge bg-dark text-white ms-1 rounded-pill">{total}</span>
+                        Price:
+                    <span class="badge bg-dark text-white ms-1 rounded-pill">${total}</span>
                         </button>
                    
                     </div>
