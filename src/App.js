@@ -8,7 +8,6 @@ function App() {
 
     function addCart(items){
      setCart(cart+1)
-    
      settotal(val=>val+items.price)
      cartIteam.push(items);
     }
@@ -25,7 +24,7 @@ function App() {
     }
     function view_cart(){
         let box = document.querySelector(".cart-box");
-        box.style.display="inline";
+        box.style.display="";
 
     }
     
